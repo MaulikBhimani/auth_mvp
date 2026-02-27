@@ -3,12 +3,12 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id           String    @id @default(uuid())
+  id           String    @id @default(auto()) @map("_id") @db.ObjectId
   email        String    @unique
   name         String
   passwordHash String    @map("password_hash")
@@ -19,12 +19,12 @@ model User {
 }
 
 model Project {
-  id            String   @id @default(uuid())
-  userId        String   @map("user_id")
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId        String   @map("user_id") @db.ObjectId
   projectName   String   @map("project_name")
   config        Json
   status        String   @default("pending")
-  generatedCode String?  @map("generated_code") @db.LongText
+  generatedCode String?  @map("generated_code")
   cliCommand    String   @map("cli_command")
   createdAt     DateTime @default(now()) @map("created_at")
   user          User     @relation(fields: [userId], references: [id])
