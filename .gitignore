@@ -2,6 +2,15 @@
 
 # dependencies
 /node_modules
+/CLEAN_STRUCTURE.md
+/DEPLOYMENT_CHECKLIST.md
+/IMPLEMENTATION_SUMMARY.md
+/PROJECT_OVERVIEW.TXT
+/requirements.txt
+/SETUP.MD
+/start.bat
+/STRUCTURE.md
+/test_gemini.py
 /.pnp
 .pnp.*
 .yarn/*

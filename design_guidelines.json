@@ -1,0 +1,162 @@
+{
+  "brand_identity": {
+    "name": "StackForge",
+    "core_concept": "The Digital Blueprint",
+    "visual_style": "Swiss Minimalist / Technical Utility",
+    "emotional_tone": "Precise, Educational, Efficient, No-nonsense",
+    "logo_concept": "Monospaced Text with a blinking cursor underscore"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["500", "700"],
+      "usage": "All section headers, panel titles, and prominent stats. Gives the 'IDE' feel.",
+      "letter_spacing": "tracking-tight"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "General UI text, descriptions, form labels.",
+      "line_height": "leading-relaxed"
+    },
+    "code": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Terminal output, code snippets, file paths."
+    }
+  },
+  "colors": {
+    "theme_mode": "light",
+    "palette": {
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#F9FAFB",
+        "tertiary": "#F3F4F6",
+        "terminal": "#0F172A"
+      },
+      "text": {
+        "primary": "#111827",
+        "secondary": "#4B5563",
+        "tertiary": "#9CA3AF",
+        "terminal": "#E2E8F0",
+        "terminal_accent": "#22C55E"
+      },
+      "brand": {
+        "primary": "#002FA7",
+        "primary_hover": "#002480",
+        "accent": "#002FA7"
+      },
+      "status": {
+        "success": "#059669",
+        "error": "#DC2626",
+        "warning": "#D97706",
+        "info": "#2563EB"
+      },
+      "border": {
+        "default": "#E5E7EB",
+        "active": "#002FA7",
+        "subtle": "#F3F4F6"
+      }
+    },
+    "gradients": "NONE. Use solid colors only as per 'No fancy gradients' constraint."
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing_scale": {
+      "section_gap": "py-24",
+      "component_gap": "gap-8",
+      "internal_padding": "p-6"
+    },
+    "grid_system": {
+      "dashboard": "grid grid-cols-1 lg:grid-cols-12 gap-6 h-[calc(100vh-4rem)]",
+      "marketing_features": "grid grid-cols-1 md:grid-cols-3 gap-12"
+    },
+    "z_index": {
+      "modal": 50,
+      "dropdown": 40,
+      "sticky_nav": 30,
+      "default": 1
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#002FA7] text-white hover:bg-[#002480] rounded-sm px-6 py-2.5 font-medium transition-transform active:scale-95 shadow-sm",
+      "secondary": "bg-white text-[#111827] border border-gray-200 hover:bg-gray-50 rounded-sm px-6 py-2.5 font-medium shadow-sm",
+      "ghost": "text-[#4B5563] hover:text-[#111827] hover:bg-gray-100 rounded-sm px-4 py-2 transition-colors",
+      "destructive": "bg-red-600 text-white hover:bg-red-700 rounded-sm shadow-sm"
+    },
+    "cards": {
+      "style": "bg-white border border-gray-200 rounded-sm p-6",
+      "interaction": "hover:border-gray-300 transition-colors duration-200",
+      "selected": "border-[#002FA7] bg-blue-50/10 ring-1 ring-[#002FA7]"
+    },
+    "inputs": {
+      "style": "bg-white border border-gray-300 text-gray-900 rounded-sm focus:ring-0 focus:border-[#002FA7] placeholder:text-gray-400 h-10 px-3",
+      "label": "text-sm font-medium text-gray-700 mb-1.5 block"
+    },
+    "terminal_panel": {
+      "style": "bg-[#0F172A] text-white font-mono p-4 rounded-sm border border-gray-800 h-full overflow-y-auto",
+      "cursor": "inline-block w-2.5 h-5 bg-[#22C55E] animate-pulse ml-1 align-middle"
+    },
+    "configurator_layout": {
+      "left_panel": "col-span-12 lg:col-span-3 border-r border-gray-200 p-6 bg-gray-50/50 overflow-y-auto",
+      "middle_panel": "col-span-12 lg:col-span-6 p-6 overflow-y-auto bg-white",
+      "right_panel": "col-span-12 lg:col-span-3 bg-[#0F172A] text-gray-300 p-6 font-mono text-sm overflow-y-auto"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid #E5E7EB. Use borders to define structure instead of shadows.",
+    "shadows": "Very subtle. shadow-sm for active elements only. Flat design preferred.",
+    "textures": "None. Pure flat colors for 'clean' aesthetic.",
+    "icons": "Lucide React icons. Stroke width 1.5px for elegance."
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-out",
+    "active": "active:scale-[0.98]",
+    "page_load": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "micro_interactions": {
+      "button_hover": "translate-y-[-1px]",
+      "list_item_hover": "bg-gray-50 border-gray-300"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1618858553936-84170aa4be58?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwYWJzdHJhY3QlMjB0ZWNobm9sb2d5JTIwc2hhcGVzJTIwYmx1ZSUyMHdoaXRlfGVufDB8fHx8MTc3MjE5MDE3Mnww&ixlib=rb-4.1.0&q=85",
+      "desc": "Minimalist blue/white abstract geometry for hero section background (low opacity)",
+      "category": "background"
+    },
+    "student_coding": {
+      "url": "https://images.unsplash.com/photo-1512296014055-b49bbcd707d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwY29kaW5nJTIwbGFwdG9wJTIwbWluaW1hbGlzdCUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzIxOTAxODZ8MA&ixlib=rb-4.1.0&q=85",
+      "desc": "Clean silver MacBook setup, representing the 'Student' workspace",
+      "category": "marketing"
+    },
+    "team_collaboration": {
+      "url": "https://images.pexels.com/photos/4974910/pexels-photo-4974910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "desc": "Two students/devs collaborating, for 'About' or 'Community' section",
+      "category": "marketing"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the 3-panel layout for the dashboard.",
+    "Use 'JetBrains Mono' for all headings to give the 'Developer Tool' vibe.",
+    "Do not use gradients. Use solid colors and 1px borders for separation.",
+    "The Right Panel (Terminal) must always be in Dark Mode (#0F172A), even if the rest of the app is Light Mode.",
+    "Use Shadcn UI components but override the rounded corners to 'rounded-sm' or 'rounded-none' for a technical look.",
+    "Ensure the 'Generate Project' button is the most prominent element on the screen (International Klein Blue).",
+    "Dynamic Field Builder: Use a table-like layout where users can add rows for 'Field Name', 'Type' (String, Int, Boolean), and 'Required' (Checkbox).",
+    "Stack Selector: Use Radio Group Cards (Selectable cards with icons)."
+  ],
+  "accessibility_guidelines": {
+    "contrast": "Ensure all text meets WCAG AA standards. Gray text on white must be #4B5563 or darker.",
+    "focus_states": "Visible focus rings (blue) for keyboard navigation.",
+    "semantic_html": "Use <main>, <nav>, <section>, <aside> for the 3 panels."
+  },
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN."
+  ]
+}
+
